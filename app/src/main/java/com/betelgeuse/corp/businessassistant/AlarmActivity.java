@@ -2,6 +2,7 @@ package com.betelgeuse.corp.businessassistant;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.media.Ringtone;
 import android.media.RingtoneManager;
 import android.net.Uri;
@@ -31,6 +32,8 @@ public class AlarmActivity extends AppCompatActivity {
         btnOff.setOnClickListener(v -> {
             stopAlarm();
             Toast.makeText(AlarmActivity.this, "Выключили", Toast.LENGTH_SHORT).show();
+            Intent intent = new Intent(AlarmActivity.this, MainActivity.class);
+            startActivity(intent);
             finish();
         });
     }

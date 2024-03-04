@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
+<RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -42,7 +42,8 @@
         android:textStyle="bold"
         android:textSize="20sp"
         android:textColor="@color/white"
-        android:singleLine="true"/>
+        android:singleLine="true"
+        android:layout_marginTop="60dp"/>
     <EditText
         android:id="@+id/editText_notes"
         android:layout_width="match_parent"
@@ -52,17 +53,37 @@
         android:padding="8dp"
         android:textStyle="normal"
         android:textSize="18sp"
-        android:textColor="@color/white" />
+        android:textColor="@color/white"
+        android:layout_below="@+id/editText_title"/>
     <Button
         android:id="@+id/alarmSwitcher"
         android:layout_width="50dp"
         android:layout_height="50dp"
-        android:background="@drawable/baseline_alarm_off_24"
-        android:layout_marginTop="10dp"/>
+        android:background="@drawable/alarm_on"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/editText_notes"/>
     <TextClock
         android:id="@+id/alarmTime"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="20.20"
-        android:textSize="20sp"/>
-</LinearLayout>
+        android:textSize="20sp"
+        android:layout_below="@+id/alarmSwitcher"/>
+
+    <ImageButton
+        android:id="@+id/sendBtn"
+        android:layout_width="90dp"
+        android:layout_height="60dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/send_24"
+        android:layout_below="@+id/alarmTime"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Send"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/sendBtn"
+        android:textSize="30sp"/>
+
+</RelativeLayout>

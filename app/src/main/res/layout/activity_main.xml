@@ -30,4 +30,27 @@
             android:textColor="@color/black"/>
     </RelativeLayout>
 
+    <RelativeLayout
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="400dp"
+        android:id="@+id/weatherButton"
+        android:layout_alignParentEnd="true">
+
+        <ImageButton
+            android:id="@+id/img_weatherButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/pngwing_com"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:text="Погода"
+            android:textAlignment="center"
+            android:textSize="30sp"
+            android:textColor="@color/black"/>
+    </RelativeLayout>
+
 </RelativeLayout>

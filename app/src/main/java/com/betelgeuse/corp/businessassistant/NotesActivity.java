@@ -3,6 +3,7 @@ package com.betelgeuse.corp.businessassistant;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Toast;
@@ -34,7 +35,6 @@ public class NotesActivity extends AppCompatActivity implements PopupMenu.OnMenu
     List<Notes> notes = new ArrayList<>();
     SearchView searchView_home;
     Notes selectedNote;
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
